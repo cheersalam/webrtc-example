@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebRTC-Example by Alam</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="webrtc.js"></script>
+</head>
+<body>
+<video id="localVideo" autoplay muted style="width:40%;"></video>
+<video id="remoteVideo" autoplay style="width:40%;"></video>
+<video id="remoteVideo2" autoplay style="width:40%;"></video>
+
+<br/>
+
+<h1>"Available Capture Inputs: " <span id="captureInputs"></span></h1>
+<input type="button" id="Configure" onclick="configure()" value="Configure"></input>
+<input type="button" id="start" onclick="start(true)" value="Start Video"></input>
+
+<script type="text/javascript">
+    pageReady();
+</script>
+</body>
+</html>
