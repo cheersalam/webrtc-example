@@ -9,15 +9,20 @@
     <script src="webrtc.js"></script>
 </head>
 <body>
-<video id="localVideo" autoplay muted style="width:40%;"></video>
 <video id="remoteVideo" autoplay style="width:40%;"></video>
 <video id="remoteVideo2" autoplay style="width:40%;"></video>
-
+<video id="remoteVideo3" autoplay style="width:40%;"></video>
+<video id="remoteVideo4" autoplay style="width:40%;"></video>
+<video id="localVideo" autoplay muted style="width:40%;"></video>
 <br/>
 
 <h1>"Available Capture Inputs: " <span id="captureInputs"></span></h1>
 <input type="button" id="Configure" onclick="configure()" value="Configure"></input>
-<input type="button" id="start" onclick="start(true)" value="Start Video"></input>
+<input type="button" id="start" onclick="startAll()" value="Start All"></input>
+<input type="button" id="start" onclick="start(0)" value="Start Video 1"></input>
+<input type="button" id="start" onclick="start(1)" value="Start Video 2"></input>
+<input type="button" id="start" onclick="start(2)" value="Start Video 3"></input>
+<input type="button" id="start" onclick="start(3)" value="Start Video 4"></input>
 
 <script type="text/javascript">
     pageReady();
